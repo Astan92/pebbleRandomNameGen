@@ -24,15 +24,25 @@ if (localStorage.getItem(storageKey) !== null)
 else 
     {
       namelist = stringToArray('Adam Smith,Jackie Jackson,Morgan Bean,Eve Newton,Issac Jones');
-      removalnamelist = stringToArray('Adam Smith,Jackie Jackson,Morgan Bean,Eve Newton,Issac Jones');  
+      removalnamelist = stringToArray('Adam Smith,Jackie Jackson,Morgan Bean,Eve Newton,Issac Jones');
+      localStorage.setItem(storageKey, arrayToString(namelist));
     }
 
 //Main UI page
-var main = new UI.Card({
-  title: 'Random Name',
-  style: 'small',
-  body: 'Press select for random name, Up for name with removal, or down to reset the removal list'
+var main = new UI.Window({
+  fullscreen: true,
 });
+var text = new UI.Text({
+  position: new Vector2(0, 0),
+  size: new Vector2(144, 188),
+  font: 'gothic-24-bold',
+  text: 'Random Name:\n Press select for random name, Up for name with removal, or down to reset the list',
+  textAlign: 'center',
+  textOverflow: 'wrap',
+  backgroundColor: 'white',
+  color: 'black'
+});
+main.add(text);
 main.show();
 
 main.on('click', 'select', function(e){
