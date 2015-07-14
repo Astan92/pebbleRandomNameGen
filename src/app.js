@@ -2,7 +2,7 @@
  * App by: Stanley Altfeld
  *
  * This app displays a random name from a list of names provided by the user.  
- * It can do with with or without removal
+ * It can do so with or without removal
  */
 
 
