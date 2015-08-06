@@ -110,7 +110,7 @@ main.on('click', 'down', function(e){
 
 //Shows the config page and sends the current name list to it
 Pebble.addEventListener('showConfiguration', function(e) {
-  Pebble.openURL('http://www.wtnfs.org/settings.html?names=,' + arrayToString(namelist));
+  Pebble.openURL('http://bystan.de/settings.html?names=,' + arrayToString(namelist));
 });
 
 //When the config page is closed takes the provided name list from the returned value, 
