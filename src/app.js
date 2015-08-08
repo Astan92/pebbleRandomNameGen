@@ -3,6 +3,8 @@
  *
  * This app displays a random name from a list of names provided by the user.  
  * It can do so with or without removal
+ * 
+ * #TODO Possible changes nessarry with config page feature update
  */
 
 
